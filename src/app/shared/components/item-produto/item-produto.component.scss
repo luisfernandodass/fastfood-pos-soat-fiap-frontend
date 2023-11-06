@@ -1,0 +1,41 @@
+form {
+    display: flex;
+    justify-content: space-between;
+    
+    .container-produto {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+
+        color: #56504C;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .container-quantidade {
+        display: flex;
+        align-items: center;
+
+        input {
+            border: 0;
+            width: 1rem;
+            text-align: center;
+            color: #8E8E93;
+            font-size: 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        button {
+            font-size: 2rem;
+            font-weight: 700;
+            background: transparent;
+            border: 0;
+            cursor: pointer;
+        }
+
+        button:enabled {
+            color: #FB2C70;
+        }
+
+        button:nth-child(0):disabled {
+            color: #D9D9D9;
+        }
+    }
+}

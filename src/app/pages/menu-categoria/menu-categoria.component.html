@@ -1,0 +1,15 @@
+<div class="wrapper-page">
+    <h1 tabindex="1">
+        <span>Escolha o que você</span>
+        <span>deseja hoje</span>
+    </h1>
+    
+    <div class="container-categorias">
+        <app-item-categoria 
+            *ngFor="let categoria of categorias"
+            [tituloCategoria]="categoria.titulo"
+            [pathImg]="categoria.pathImg"
+        >
+        </app-item-categoria>
+    </div>
+</div>

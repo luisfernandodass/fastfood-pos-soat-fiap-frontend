@@ -1,0 +1,1 @@
+export const QNTD_DIGITOS_CPF = 11;

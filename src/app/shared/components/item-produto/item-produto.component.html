@@ -1,0 +1,16 @@
+<form [formGroup]="form">
+    <div class="container-produto">
+        <span>
+            {{ product.name }}
+        </span>
+        <span>
+            {{ product.price }}
+        </span>
+    </div>
+
+    <div class="container-quantidade">
+        <button type="button" [disabled]="disableBtnDecreaseQuantity" (click)="removeProduct()">-</button>
+        <input type="number" readonly formControlName="productQuantity">
+        <button type="button" (click)="addProduct()">+</button>
+    </div>
+</form>

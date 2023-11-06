@@ -1,0 +1,17 @@
+<div class="wrapper-page">
+    <ng-container *ngFor="let i of produtosSubCategoria">
+        <app-produtos-sub-categoria [productsSubCategoria]="i">
+
+        </app-produtos-sub-categoria>
+    </ng-container>
+</div>
+
+<button type="button" class="btn-footer wrapper-page" [disabled]="true" tabindex="1">
+    <span aria-hidden="true">
+        ir para a sacola
+    </span>
+
+    <span aria-hidden="true">
+        R$ 0,00
+    </span>
+</button>

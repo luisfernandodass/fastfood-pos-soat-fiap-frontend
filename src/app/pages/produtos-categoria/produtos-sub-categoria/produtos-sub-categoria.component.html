@@ -1,0 +1,12 @@
+
+<h2>{{ productsSubCategoria.sub_categoria | uppercase }}</h2>
+
+<div class="wrapper-product-list">
+    <ng-container *ngFor="let i of productsSubCategoria.product_list"> 
+        <app-item-produto [product]="i">
+    
+        </app-item-produto>
+    </ng-container>
+</div>
+
+ 

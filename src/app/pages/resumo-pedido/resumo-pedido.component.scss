@@ -1,0 +1,60 @@
+h1 {
+    margin: 4rem 0 3rem 0;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    span {
+        color: #56504C;
+    }
+    span:nth-child(1) {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    span:nth-child(2) {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    .column {
+        gap: 1rem;
+
+        .row {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #56504C;
+    
+            span:nth-child(1) {
+                font-size: 1.5rem;
+                font-weight: 400;
+                font-size: 1.25rem;
+            }
+            span:nth-child(2) {
+                font-size: 1.25rem;
+                font-weight: bold;
+            }  
+        }
+    }
+
+    button {
+        margin-top: 1rem;
+    
+        width: 100%;
+        height: 48px;
+    
+        font-size: 20px;
+        font-weight: 700;
+
+        border: 1px solid #FB2C70;
+        background: #FB2C70;
+        color: #FFF;
+        cursor: pointer;
+    }
+}

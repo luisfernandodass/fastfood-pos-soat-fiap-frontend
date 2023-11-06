@@ -1,0 +1,28 @@
+<div class="wrapper-page">
+    <h1 aria-label="Se identifique pelo seu CPF" tabindex="1">
+        <span aria-hidden="true">Se identifique</span>
+        <span aria-hidden="true">pelo seu CPF</span>
+    </h1>
+    
+    <div class="container-celulas-input">
+        <app-celula-input 
+            *ngFor="let celula of quantidadeDigitos; index as i" 
+            (formValido)="verificarValidadeDoForm($event)"
+            [inputElementoID]="'celula-input-cpf-' + i"
+        >
+            {{ celula }}
+        </app-celula-input>
+    </div>
+    
+    <button type="button" [disabled]="!qntdDigitosCPFValida" (click)="validarCPF()">
+        <ng-container *ngIf="showLoadingButton">
+            <span class="material-symbols-outlined btn-loading">
+                progress_activity
+                </span>
+        </ng-container>
+    
+        <ng-container *ngIf="!showLoadingButton">
+            continuar
+        </ng-container>
+    </button>
+</div>
